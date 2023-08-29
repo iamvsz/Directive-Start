@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'directive-start';
   numbers = [1, 2, 3, 4, 5];
-  onlyOdd = false;
+  evenNumbers = [2, 4, 6, 8]
+  oddNumbers = [1, 3, 5, 7, 9]
+  onlyOdd: boolean = false;
 }
