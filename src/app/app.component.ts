@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'directive-start';
+  numbers = [1, 2, 3, 4, 5];
+  onlyOdd = false;
 }
