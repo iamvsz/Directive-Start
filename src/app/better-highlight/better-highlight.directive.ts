@@ -6,11 +6,12 @@ import { Directive, OnInit, ElementRef, Renderer2, HostListener, HostBinding, In
 export class BetterHighlightDirective implements OnInit {
   @Input() defaultColor: string = 'transparent';
   @Input() highlightColor: string = 'blue';
-  @HostBinding('style.backgroundColor') backgroundColor : string = this.defaultColor;
+  @HostBinding('style.backgroundColor') backgroundColor! : string;
 
     constructor(private eleRef: ElementRef, private renderer: Renderer2) { }
 
   ngOnInit() {
+    this.backgroundColor =  this.defaultColor;
     // this.renderer.setStyle(this.eleRef.nativeElement, 'background-color', 'blue');
   }
 
