@@ -11,4 +11,5 @@ export class AppComponent {
   evenNumbers = [2, 4, 6, 8]
   oddNumbers = [1, 3, 5, 7, 9]
   onlyOdd: boolean = false;
+  value: number = 43;  // will print default
 }
